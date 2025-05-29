@@ -114,4 +114,4 @@ public class MyDrawPanel extends JPanel{
 }
 ```
 
-![menu]()
+![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard1.png)
