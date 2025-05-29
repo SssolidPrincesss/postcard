@@ -115,3 +115,57 @@ public class MyDrawPanel extends JPanel{
 ```
 
 ![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard1.png)
+
+Научимся рисовать прямоугольник, закрашенный случайным цветом
+
+```java
+		int red = (int) (Math.random() * 255);
+		int green = (int) (Math.random() * 255);
+		int blue = (int) (Math.random() * 255);
+		Color randomColor = new Color(red, green, blue);
+		g.setColor(randomColor);
+		g.fillRect(30, 40, 300, 300);
+```
+
+![image](https://github.com/SssolidPrincesss/postcard/blob/main/images/rectangle.png)
+
+Oтрисовка незакрашенного треугольника
+
+```java
+		Graphics2D g2d = (Graphics2D) g;
+        float lineWidth = 4.0f;
+        g2d.setStroke(new BasicStroke(lineWidth));
+        
+	    int x1 = 90, y1 = 250;
+	    int x2 = 150, y2 = 50;
+	    int x3 = 400, y3 = 600;
+	    g.setColor(randomColor);
+	    g.drawLine(x1, y1, x2, y2); 
+	    g.drawLine(x2, y2, x3, y3);
+	    g.drawLine(x3, y3, x1, y1);
+```
+![image](https://github.com/SssolidPrincesss/postcard/blob/main/images/triangle.png)
+
+Cоздаем прямоугольник белого цвета
+
+```java
+		g.setColor(Color.WHITE);
+		g.fillRect(85, 325, 275, 35);
+```
+![image](https://github.com/SssolidPrincesss/postcard/blob/main/images/Plashka.png)
+
+И сам текст
+```java
+        g.setColor(Color.BLACK);
+        g.setFont(new Font("Serif", Font.BOLD, 30));
+        g.drawString("С днем металлурга!", 90, 350);
+```
+![image](https://github.com/SssolidPrincesss/postcard/blob/main/images/text.png)
+
+Открытка готова
+
+![image](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard2.png)
+
+
+
+
