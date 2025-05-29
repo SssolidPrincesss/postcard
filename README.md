@@ -168,4 +168,4 @@ Cоздаем прямоугольник белого цвета
 
 
 
-
+![image](https://github.com/SssolidPrincesss/postcard/blob/main/images/kot.png)
