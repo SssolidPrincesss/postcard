@@ -1,5 +1,3 @@
-package mkpostkardclout;
-
 import javax.swing.*;
 import java.awt.*;
 
