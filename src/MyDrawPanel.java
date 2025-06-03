@@ -1,5 +1,3 @@
-package mkpostkardclout;
-
 import java.awt.*;
 import java.awt.Color;
 import java.awt.Font;
