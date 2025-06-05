@@ -1,17 +1,21 @@
 import java.awt.*;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
 import javax.swing.JPanel;
 
 public class MyDrawPanel extends JPanel{
-	public void paintComponent(Graphics g) {
-
-		
+	Color randomColor;
+	
+	public Color generateColor() {
 		int red = (int) (Math.random() * 255);
 		int green = (int) (Math.random() * 255);
 		int blue = (int) (Math.random() * 255);
-		Color randomColor = new Color(red, green, blue);
+		Color rc = new Color(red, green, blue);
+		
+		return rc;	
+	}
+	
+	public void paintComponent(Graphics g) {
+
+		randomColor =  generateColor();
 		g.setColor(randomColor);
 		g.fillRect(30, 40, 300, 300);
 		
@@ -29,40 +33,25 @@ public class MyDrawPanel extends JPanel{
 	    g.drawLine(x3, y3, x1, y1);
 	    
 	    
-	    red = (int) (Math.random() * 255);
-		green = (int) (Math.random() * 255);
-		blue = (int) (Math.random() * 255);
-		randomColor = new Color(red, green, blue);
+	    randomColor =  generateColor();
 		g.setColor(randomColor);
 		g.fillOval(150, 160, 250, 250);
 		
-		red = (int) (Math.random() * 255);
-		green = (int) (Math.random() * 255);
-		blue = (int) (Math.random() * 255);
-		randomColor = new Color(red, green, blue);
+		randomColor =  generateColor();
 		g.setColor(randomColor);
 		g.fillRect(70, 120, 150, 400);
 		
-		red = (int) (Math.random() * 255);
-		green = (int) (Math.random() * 255);
-		blue = (int) (Math.random() * 255);
-		randomColor = new Color(red, green, blue);
+		randomColor =  generateColor();
 		g.setColor(randomColor);
 		g.fillRect(200, 60, 250, 20);
 		
 		
-		red = (int) (Math.random() * 255);
-		green = (int) (Math.random() * 255);
-		blue = (int) (Math.random() * 255);
-		randomColor = new Color(red, green, blue);
+		randomColor =  generateColor();
 		g.setColor(randomColor);
 		g.fillRect(300, 90, 150, 20);
 		
 
-		red = (int) (Math.random() * 255);
-		green = (int) (Math.random() * 255);
-		blue = (int) (Math.random() * 255);
-		randomColor = new Color(red, green, blue);
+		randomColor =  generateColor();
 		g.setColor(randomColor);
 		g.fillRect(250, 50, 20, 600);
 		
@@ -76,5 +65,4 @@ public class MyDrawPanel extends JPanel{
         g.drawString("С днем металлурга!", 90, 350);
 		
 	}
-	
 }
