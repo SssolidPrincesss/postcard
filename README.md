@@ -1,4 +1,5 @@
-Открытка
+Открытка  
+
 При каждом повторном запуске программы или открытии фрейма открытка перерисовывается и цвета фигур на фоне меняются:  
 ![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard1.png)
 ![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard2.png)
@@ -9,8 +10,6 @@
 класс Postcard - точка ыхода программы, то, с чего начинается все веселье:  
 
 ```java
-package mkpostkardclout;
-
 import javax.swing.*;
 import java.awt.*;
 
