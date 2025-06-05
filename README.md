@@ -1,6 +1,12 @@
 Открытка
+При каждом повторном запуске программы или открытии фрейма открытка перерисовывается и цвета фигур на фоне меняются:  
+![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard1.png)
+![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard2.png)
 
-класс Postcard
+Что насчет составляющих программы?  
+Разберем подробнее основыне моменты:  
+
+класс Postcard - точка ыхода программы, то, с чего начинается все веселье:  
 
 ```java
 package mkpostkardclout;
@@ -28,16 +34,24 @@ public class Postcard{
 ```
 
 
-Класс MyDrawPanel
-```java
-package mkpostkardclout;
 
+Класс MyDrawPanel - то, при помощи чего происходит отрисовка:
+
+Сначала библиотеки:
+```java
 import java.awt.*;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import javax.swing.JPanel;
+```
+Тот самый волщебный параметр:
+```java
+public class MyDrawPanel extends JPanel{
+	public void paintComponent(Graphics g) 
+```
 
+```java
 public class MyDrawPanel extends JPanel{
 	public void paintComponent(Graphics g) {
 
@@ -114,4 +128,4 @@ public class MyDrawPanel extends JPanel{
 }
 ```
 
-![menu]()
+
