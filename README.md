@@ -51,13 +51,24 @@ public class MyDrawPanel extends JPanel{
 	public void paintComponent(Graphics g) 
 ```
 А теперь разберемся, как нарисовать основные элементы открытки:  
-Прямоугольник, закрашенный случайным цветом:  
+Метод для генерации рандомного цвета:  
   
 ```java
+	public Color generateColor() {
 		int red = (int) (Math.random() * 255);
 		int green = (int) (Math.random() * 255);
 		int blue = (int) (Math.random() * 255);
-		Color randomColor = new Color(red, green, blue);
+		Color rc = new Color(red, green, blue);
+		
+		return rc;	
+	}
+```
+
+Прямоугольник, закрашенный случайным цветом:  
+
+  
+```java
+		randomColor =  generateColor();
 		g.setColor(randomColor);
 		g.fillRect(30, 40, 300, 300);
 ```
@@ -94,10 +105,24 @@ public class MyDrawPanel extends JPanel{
 ```
 ![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/text.png)  
 
+P.S. Полный код можно найти в папке src  
 
 ![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/kot.png)   
 
-P.S. Полный код можно найти в папке src
+Секретный код для любознательных:  
+```java
+
+public MyDrawPanel() {
+        Timer timer = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                repaint();
+            }
+        });
+        timer.start();
+    }
+```
+
 
 
 
