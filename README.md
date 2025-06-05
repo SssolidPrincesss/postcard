@@ -5,9 +5,9 @@
 ![menu](https://github.com/SssolidPrincesss/postcard/blob/main/images/postcard2.png)
 
 Что насчет составляющих программы?  
-Разберем подробнее основыне моменты:  
+Разберем подробнее основные моменты:  
 
-класс Postcard - точка ыхода программы, то, с чего начинается все веселье:  
+класс Postcard - точка входа программы, то, с чего начинается все веселье:  
 
 ```java
 import javax.swing.*;
@@ -44,7 +44,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 ```
-Тот самый волщебный параметр:
+Тот самый волшебный параметр:
 ```java
 public class MyDrawPanel extends JPanel{
 	public void paintComponent(Graphics g) 
